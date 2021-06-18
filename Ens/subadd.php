@@ -5,6 +5,7 @@ require("../database.php");
 error_reporting(1);
 ?>
 <link href="../css/testadd.css" rel="stylesheet" type="text/css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 <header class="main-header">
     <nav>
         <img  src="../img/exam.png">
@@ -48,17 +49,16 @@ return false;
 return true;
 }
 </script>
-
-<div style="margin:auto;width:90%;height:500px;box-shadow:2px 1px 2px 2px #CCCCCC;text-align:left">
+<div class="main">
+<div class="ajouter" >
 <title>Ajouter Module</title>
 <form name="form1" method="post" onSubmit="return check();">
-  <table class="table table-striped">
+  <table class="table table-borderless">
     <tr>
-      <td width="45%" height="32"><div align="center"><strong>Enter Subject Name </strong></div></td>
-      <td width="2%" height="5">  
-      <td width="53%" height="32">
-        <input class="form-control" name="subname" placeholder="enter language name" type="text" id="subname">
-    <tr>
+      <td width="25%" height="32"><div style="display: flex;justify-content: center;color: cornsilk;"><strong>Enter Subject Name </strong></div></td>
+      <td width="55%" height="5">   <input style="display: flex;justify-content: center;" class="form-control" name="subname" placeholder="Exp: Base De Données" type="text" id="subname">
+      <td width="20%" height="32">
+      <tr>
         <td height="26"> </td>
         <td>&nbsp;</td>
 	  <td>&nbsp;</td>
@@ -66,9 +66,20 @@ return true;
     <tr>
       <td height="26"></td>
       <td>&nbsp;</td>
-      <td><input class="btn btn-primary" type="submit" name="submit" value="Add" ></td>
+      <td style="display: flex;justify-content: center;"><input class="btn btn-dark"id="button" type="submit" name="submit" value="    Ajouter    " ></td>
+    </tr>
+    <tr>
+        <td height="26"> </td>
+        <td>&nbsp;</td>
+	  <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td height="26"> </td>
+        <td>&nbsp;</td>
+	  <td>&nbsp;</td>
     </tr>
   </table>
 </form>
 <p>&nbsp; </p>
+</div>
 </div>
