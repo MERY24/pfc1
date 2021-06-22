@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>planning module</title>
+    <link href="../css/viewsub.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav>
+            <img  src="../img/exam.png">
+            <ul>
+                <li class="current"><div class="wrap"><a href="#">Acceuil</a></div></li>
+                <li><div class="wrap"><a href="#">Affichage</a></div></li>
+                <li><div class="wrap"><a href="#">Planning</a></div></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <h1 style="transform:translateY(-350%);">Listes Des Modules</h1>
+        <div class="down">
+            <div class="tab">
+            <table class='table table-borderless table-hover'>
+                
+                <thead >
+                <tr><th width="25%" class='text-light'>ID</th>
+                <th  width="55%" class='text-light'>name</th>
+                <th width="20%" class='text-light'>Update/Delete</th>
+
+            </tr>
+            </thead>
+               
+                
+                <tr>	
+                <td class='text-light'></td>
+                <td class='text-light'>my life sucks</td>
+                <td><a href="#">  </a></td>
+                
+                </tr>
+            
+                <tr>	
+                    <td></td>
+                    <td>i suck too</td>
+                    <td><a href="#"></a></td>
+                    
+                    </tr>
+                 <tr>	
+                        <td></td>
+                        <td></td>
+                        <td style="display: flex;justify-content: space-evenly;"><a href='subupdate.php?sub_id=$id' role="button" class="cik btn btn-outline-warning" ><i class="bi bi-pen"></i></a>
+                            <a href='subdelete.php?sub_id=$id' role="button" class="cik fu btn btn-outline-danger" ><i class="bi bi-trash"></i></a></td>
+                        <td>
+                    </tr> </table>
+              </div>
+        <div class="ajouter">
+            <a role="button" class='cik btn btn-outline-danger'  href='subadd.php'>Add Subject</a>
+        </div>
+     </div>
+    </div>
+    <script >
+        const items = document.querySelectorAll("ul li");
+items.forEach(item => {
+  item.addEventListener("click", () => {
+    document.querySelector("li.current").classList.remove("current");
+    item.classList.add("current");
+  });
+});
+    </script>
+</body>
+</html>
